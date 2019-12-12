@@ -10,6 +10,7 @@ const Enter = event => {
 };
 
 const SoftRight = event => {
+  event.preventDefault();
   const currentElement = getCurrentElement();
   if (currentElement.tagName === "INPUT") return;
 
